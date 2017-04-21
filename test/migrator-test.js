@@ -30,7 +30,7 @@ mocha.describe('Mongo migrator tests', function () {
 
     mocha.describe('Migrate', function () {
         mocha.it('perform all migrations', function (done) {
-            migromongo.migrate(function () {
+            migromongo.migrate(function (success) {
                 mongoDb.collection('test').findOne({value: 2}, function (err, data) {
                     expect(data.name).to.equal('test2');
                     done();
