@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Lujo5/migromongo/issues"
   },
-  "homepage": "https://github.com/Lujo5/migromongo#readme"
+  "homepage": "https://github.com/Lujo5/migromongo#readme",
+  "dependencies": {
+    "mongodb": "^2.2.26"
+  }
 }
