@@ -1,0 +1,10 @@
+{
+  "driver": "mongodb",
+  "host": "localhost",
+  "port": 27017,
+  "user": "",
+  "password": "",
+  "dbname": "migromongo_test",
+  "directory": "C:/Users/Luka/WebstormProjects/migromongo/test/migrations",
+  "collection": "_migrations_test"
+}

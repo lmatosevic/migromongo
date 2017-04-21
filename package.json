@@ -4,7 +4,7 @@
   "description": "Mongo database migration library",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/migrator-test.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,9 @@
   "homepage": "https://github.com/Lujo5/migromongo#readme",
   "dependencies": {
     "mongodb": "^2.2.26"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
   }
 }
