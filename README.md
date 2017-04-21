@@ -44,7 +44,7 @@ const mongo = require('mongodb').MongoClient;
 const Migromongo = require('migromongo');
 
 mongo.connect('mongodb://localhost:27017/databaseName', function (err, db) {
-   var migromongo = new Migromongo(mongoDb, {directory: '../migrations/', collection: '_migrations'});
+   var migromongo = new Migromongo(db, {directory: '../migrations/', collection: '_migrations'});
    migromongo.migrate(function (success) {
         console.log('Migrations finished ' + success ? 'successfully' : 'unsuccessfully');
    });
