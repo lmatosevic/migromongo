@@ -1,0 +1,23 @@
+{
+  "name": "migromongo",
+  "version": "1.0.0",
+  "description": "Mongo database migration library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lujo5/migromongo.git"
+  },
+  "keywords": [
+    "mongo",
+    "migration"
+  ],
+  "author": "Luka Matosevic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lujo5/migromongo/issues"
+  },
+  "homepage": "https://github.com/Lujo5/migromongo#readme"
+}
