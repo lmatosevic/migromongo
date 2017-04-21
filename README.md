@@ -50,7 +50,7 @@ mongo.connect('mongodb://localhost:27017/databaseName', function (err, db) {
    });
 }
 ```
-Already executed migrations (stored in migrations collection) will be ignored in next iterations, only newly added will be executed.  
+Already executed migrations (stored in migrations collection) will be ignored in the next iterations, only newly added will be executed.
 
 License
 ----
