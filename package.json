@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/Lujo5/migromongo#readme",
   "dependencies": {
-    "mongodb": "^2.2.26"
+    "mongodb": "^3.0.4"
   },
   "devDependencies": {
     "chai": "^3.5.0",

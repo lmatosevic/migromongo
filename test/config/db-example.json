@@ -4,7 +4,7 @@
   "port": 27017,
   "authdb": "admin",
   "user": "admin",
-  "password": "lm5372",
+  "password": "pass123",
   "dbname": "migromongo_test",
   "directory": "migromongo/test/migrations",
   "collection": "_migrations_test"

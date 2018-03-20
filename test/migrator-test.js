@@ -15,7 +15,6 @@ mocha.before(function (done) {
 
 mocha.after(function (done) {
     mongoDb.dropDatabase(function () {
-        mongoDb.close();
         done();
     });
 });
@@ -31,6 +30,7 @@ mocha.describe('Mongo migrator tests', function () {
     mocha.describe('Migrate', function () {
         mocha.it('perform all migrations', function (done) {
             migromongo.migrate(function (success) {
+                expect(success).to.equal(true);
                 mongoDb.collection('test').findOne({value: 2}, function (err, data) {
                     expect(data.name).to.equal('test2');
                     done();
@@ -45,15 +45,21 @@ function connectToDb(cb) {
     var password = config.password;
 
     var auth = '';
-    if (username != '' && password != '') {
+    var opt = {};
+    if (username !== '' && password !== '') {
         auth = username + ':' + password + '@';
+        opt = {
+            native_parser: true,
+            authSource: 'admin'
+        };
     }
 
-    mongo.connect(config.driver + '://' + auth + config.host + ':' + config.port + '/' + config.dbname, function (err, db) {
+    mongo.connect(config.driver + '://' + auth + config.host + ':' + config.port + '/' + config.dbname, opt, function (err, client) {
         if (err) {
             console.error('Error while connecting to mongo database');
+            console.error(err);
             return;
         }
-        cb(db);
+        cb(client.db(config.dbname));
     });
 }
