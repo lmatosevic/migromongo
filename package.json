@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Lujo5/migromongo.git"
+    "url": "git+https://github.com/lmatosevic/migromongo.git"
   },
   "keywords": [
     "mongo",
@@ -17,9 +17,9 @@
   "author": "Luka Matosevic",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Lujo5/migromongo/issues"
+    "url": "https://github.com/lmatosevic/migromongo/issues"
   },
-  "homepage": "https://github.com/Lujo5/migromongo#readme",
+  "homepage": "https://github.com/lmatosevic/migromongo#readme",
   "dependencies": {
     "mongodb": "^3.0.10"
   },
